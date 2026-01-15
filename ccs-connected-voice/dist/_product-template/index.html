@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    TEMPLATE INSTRUCTIONS:
+    1. Replace {{PRODUCT_NAME}} with the product name (e.g., "Cloud VoIP")
+    2. Replace {{PRODUCT_TAGLINE}} with a short tagline
+    3. Replace {{PRODUCT_DESCRIPTION}} with the main description
+    4. Update meta description
+    5. Update hero background image
+    6. Replace feature cards with product-specific features
+    7. Update overview image
+  -->
+  <title>{{PRODUCT_NAME}} | CCS Connected Voice</title>
+  <meta name="description" content="{{PRODUCT_DESCRIPTION_SHORT}}">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/pages/product.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Skip Links -->
+<a href="#main-content" class="skip-link">Skip to Content</a>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-container">
+    <a href="/" class="logo">
+      <img src="https://www.customonline.com/wp-content/uploads/cropped-ccs-custom-computer-specialists-favicon.png" alt="CCS" width="70" height="70">
+      <span class="logo-text">Connected Voice</span>
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#" class="nav-link has-dropdown">Products</a>
+          <div class="nav-dropdown">
+            <a href="/CloudVOIP/" class="nav-dropdown-link">Cloud VoIP</a>
+            <a href="/CallCenter/" class="nav-dropdown-link">Call Center Solutions</a>
+            <a href="/Connectivity/" class="nav-dropdown-link">Connectivity Solutions</a>
+            <a href="/ManagedNetwork/" class="nav-dropdown-link">Managed Network</a>
+            <a href="/SIPConnectivity/" class="nav-dropdown-link">SIP Connectivity</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/pricing/" class="nav-link">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact-us/" class="nav-link nav-link-contact">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header-right">
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Product Hero -->
+  <section class="hero product-hero" id="main-content">
+    <div class="hero-background">
+      <!-- Replace with product-specific hero image -->
+      <img src="https://images.unsplash.com/photo-1560264280-88b68371db39?w=1920&h=600&fit=crop" alt="" aria-hidden="true">
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">CCS Connected Voice</p>
+      <h1 class="hero-title">{{PRODUCT_NAME}}</h1>
+      <p class="hero-subtitle">{{PRODUCT_TAGLINE}}</p>
+      <div class="hero-buttons">
+        <a href="/pricing/" class="btn btn-primary">See Pricing</a>
+        <a href="/contact-us/" class="btn btn-secondary">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Overview -->
+  <section class="section product-overview">
+    <div class="container">
+      <div class="product-overview-grid">
+        <div class="product-overview-content">
+          <h2>{{PRODUCT_HEADLINE}}</h2>
+          <p>
+            {{PRODUCT_DESCRIPTION_PARAGRAPH_1}}
+          </p>
+          <p>
+            {{PRODUCT_DESCRIPTION_PARAGRAPH_2}}
+          </p>
+        </div>
+        <div class="product-overview-image">
+          <!-- Replace with product-specific image -->
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop" alt="{{PRODUCT_NAME}}">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Features -->
+  <section class="section product-features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-description centered">Everything you need for {{PRODUCT_NAME_LOWERCASE}}.</p>
+      </div>
+      
+      <!-- Feature Cards Grid - Replace with actual features -->
+      <div class="product-features-grid">
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_1_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_2_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_3_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_4_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_5_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_6_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_7_TITLE}}</h3>
+        </div>
+        
+        <div class="product-feature-card">
+          <div class="product-feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-feature-title">{{FEATURE_8_TITLE}}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Benefits -->
+  <section class="section product-benefits">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Choose {{PRODUCT_NAME}}?</h2>
+      </div>
+      
+      <div class="product-benefits-grid">
+        <div class="product-benefit">
+          <div class="product-benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="product-benefit-title">No Upfront Costs, No Surprises</h3>
+          <p class="product-benefit-description">Predictable monthly pricing with no hidden fees.</p>
+        </div>
+        
+        <div class="product-benefit">
+          <div class="product-benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+            </svg>
+          </div>
+          <h3 class="product-benefit-title">100s of Business Features</h3>
+          <p class="product-benefit-description">Enterprise-grade features included at no extra cost.</p>
+        </div>
+        
+        <div class="product-benefit">
+          <div class="product-benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+            </svg>
+          </div>
+          <h3 class="product-benefit-title">Unlimited Training and Support</h3>
+          <p class="product-benefit-description">Expert help whenever you need it, at no additional charge.</p>
+        </div>
+        
+        <div class="product-benefit">
+          <div class="product-benefit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+            </svg>
+          </div>
+          <h3 class="product-benefit-title">Dedicated Installation</h3>
+          <p class="product-benefit-description">Professional setup and project management included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product CTA -->
+  <section class="product-cta">
+    <div class="container">
+      <h2 class="product-cta-title">Ready to Get Started?</h2>
+      <p class="product-cta-description">Contact us today for a personalized quote and demo.</p>
+      <div class="btn-group">
+        <a href="/pricing/" class="btn btn-white">See Pricing</a>
+        <a href="/contact-us/" class="btn btn-secondary">Get a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="footer">
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Get Started Column -->
+        <div class="footer-column">
+          <h3 class="footer-title">Get Started Today</h3>
+          <div class="footer-contact">
+            <a href="tel:8663116721" class="footer-link">(866) 311-6721</a>
+            <a href="mailto:voice@customonline.com" class="footer-link">voice@customonline.com</a>
+          </div>
+          <p class="footer-disclosure">
+            <a href="https://www.cigna.com/legal/compliance/machine-readable-files" target="_blank" rel="noopener">Click here to view the machine-readable files as required by the Transparency in Coverage Rules for Employers.</a>
+          </p>
+          <div class="footer-back-link">
+            <a href="https://www.customonline.com" target="_blank" rel="noopener">Visit CustomOnline.com for IT Services &rarr;</a>
+          </div>
+        </div>
+        
+        <!-- Locations Column -->
+        <div class="footer-column footer-locations">
+          <h3 class="footer-title">LOCATIONS</h3>
+          <div class="locations-grid">
+            <div class="location">
+              <h4>HEADQUARTERS</h4>
+              <p>70 Suffolk Court # 100<br>Hauppauge, NY 11788</p>
+              <h4>RHODE ISLAND</h4>
+              <p>6 Blackstone Valley Place<br>Suite 402<br>Lincoln, RI 02865</p>
+            </div>
+            <div class="location">
+              <h4>OHIO</h4>
+              <p>6100 Oak Tree Boulevard<br>Independence, OH 44131</p>
+              <h4>DELAWARE</h4>
+              <p>920 Justison St<br>Wilmington, DE 19801</p>
+            </div>
+            <div class="location">
+              <h4>NORTH CAROLINA</h4>
+              <p>7208 ACC Boulevard<br>Raleigh, NC 27617</p>
+              <h4>INDIANA</h4>
+              <p>7701 W. Kilgore Ave #1B<br>Yorktown, IN 47396</p>
+            </div>
+          </div>
+          <div class="footer-badges">
+            <img src="https://www.customonline.com/wp-content/uploads/SOC2logonobackground-150x150.png" alt="SOC 2 Certified" class="badge-img">
+            <img src="https://www.customonline.com/wp-content/uploads/RPO_Badge-150x150.png" alt="RPO Badge" class="badge-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>All contents &copy; 2026 Custom Computer Specialists. All Rights Reserved. | <a href="https://www.customonline.com/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

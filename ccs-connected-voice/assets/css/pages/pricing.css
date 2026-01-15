@@ -1,0 +1,317 @@
+/* ===================================
+   CCS Connected Voice - Pricing Page Styles
+   =================================== */
+
+/* ===================================
+   Pricing Hero
+   =================================== */
+.pricing-hero {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.pricing-hero .hero-content {
+  padding: 60px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pricing-hero .hero-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.pricing-hero .hero-subtitle {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/* ===================================
+   Pricing Table Section
+   =================================== */
+.pricing-table-section {
+  padding: 80px 0;
+  background: var(--color-gray-light);
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: 180px repeat(4, 1fr);
+  gap: 0;
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+}
+
+/* Header row */
+.pricing-table-header {
+  display: contents;
+}
+
+.pricing-table-header-cell {
+  padding: 24px 16px;
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.pricing-table-header-cell:first-child {
+  background: var(--color-white);
+}
+
+.pricing-product-image {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.pricing-product-name {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 4px;
+}
+
+.pricing-product-subtitle {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Data rows */
+.pricing-table-row {
+  display: contents;
+}
+
+.pricing-table-cell {
+  padding: 20px 16px;
+  border-bottom: 1px solid var(--color-gray-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricing-table-cell:first-child {
+  background: var(--color-gray-light);
+}
+
+.pricing-row-label {
+  font-size: 12px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-row-label-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-cell-value {
+  text-align: center;
+}
+
+.pricing-price {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.pricing-price-unit {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gray);
+}
+
+.pricing-price-note {
+  font-size: 14px;
+  color: var(--color-gray);
+  margin-top: 4px;
+}
+
+.pricing-term {
+  font-size: 14px;
+  color: var(--color-gray-dark);
+}
+
+.pricing-term strong {
+  font-weight: var(--font-weight-medium);
+}
+
+.pricing-onetime {
+  font-size: 14px;
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+/* Bundle row - highlighted */
+.pricing-table-row.bundle-row .pricing-table-cell {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.pricing-table-row.bundle-row .pricing-table-cell:first-child {
+  background: #1a3a7a;
+}
+
+.pricing-bundle-value {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pricing-bundle-value strong {
+  display: block;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Add-ons row */
+.pricing-table-row.addons-row .pricing-table-cell {
+  background: var(--color-white);
+  border-bottom: none;
+  vertical-align: top;
+}
+
+.pricing-addons-list {
+  font-size: 14px;
+  color: var(--color-gray);
+  line-height: 1.6;
+}
+
+.pricing-addons-list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 4px;
+}
+
+.pricing-addons-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--color-gray);
+}
+
+/* ===================================
+   Pricing CTA
+   =================================== */
+.pricing-cta-section {
+  padding: 80px 0 60px;
+  background: var(--color-white);
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-cta-section .container {
+  max-width: 800px;
+}
+
+.pricing-cta-section .btn {
+  font-size: 18px;
+  padding: 16px 40px;
+}
+
+.pricing-cta-note {
+  font-size: 14px;
+  color: var(--color-gray);
+  margin-top: 32px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===================================
+   Mobile Pricing Cards
+   =================================== */
+.pricing-cards-mobile {
+  display: none;
+}
+
+.pricing-card-mobile {
+  background: var(--color-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 24px;
+}
+
+.pricing-card-mobile-header {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 24px;
+  text-align: center;
+}
+
+.pricing-card-mobile-body {
+  padding: 24px;
+}
+
+.pricing-card-mobile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.pricing-card-mobile-row:last-child {
+  border-bottom: none;
+}
+
+.pricing-card-mobile-label {
+  font-size: 13px;
+  color: var(--color-gray);
+  font-weight: var(--font-weight-medium);
+}
+
+.pricing-card-mobile-value {
+  font-size: 14px;
+  color: var(--color-gray-dark);
+  text-align: right;
+}
+
+.pricing-card-mobile-bundle {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 16px 24px;
+  text-align: center;
+}
+
+/* ===================================
+   Responsive Adjustments
+   =================================== */
+@media (max-width: 1024px) {
+  .pricing-table {
+    display: none;
+  }
+  
+  .pricing-cards-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-hero {
+    min-height: 300px;
+  }
+  
+  .pricing-hero .hero-title {
+    font-size: 32px;
+  }
+  
+  .pricing-hero .hero-subtitle {
+    font-size: 16px;
+  }
+}

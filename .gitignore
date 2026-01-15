@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output (optional - can include if you want to deploy from dist)
+# dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local

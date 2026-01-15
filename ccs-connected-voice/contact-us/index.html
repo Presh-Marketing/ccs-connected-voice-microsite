@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote | CCS Connected Voice</title>
+  <meta name="description" content="Contact CCS Connected Voice for a personalized quote on VoIP, call center solutions, and managed network services.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/base.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/pages/contact.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!--#include file="includes/header.html" -->
+
+  <!-- Contact Hero -->
+  <section class="hero contact-hero hero-compact hero-centered" id="main-content">
+    <div class="hero-background">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&h=600&fit=crop" alt="" aria-hidden="true">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Get a Quote</h1>
+      <p class="hero-subtitle">Let us help you find the right communication solution for your business.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 class="contact-info-title">Contact Information</h2>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-value">
+              <a href="tel:8663116721">(866) 311-6721</a>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-value">
+              <a href="mailto:voice@customonline.com">voice@customonline.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-info-item">
+            <div class="contact-info-label">Hours</div>
+            <div class="contact-info-value">
+              Monday – Friday: 8am – 6pm EST
+            </div>
+          </div>
+          
+          <hr class="contact-info-divider">
+          
+          <div class="contact-info-item">
+            <div class="contact-info-label">Headquarters</div>
+            <div class="contact-info-address">
+              70 Suffolk Court # 100<br>
+              Hauppauge, NY 11788
+            </div>
+          </div>
+          
+          <hr class="contact-info-divider">
+          
+          <div class="contact-main-site">
+            <p>Looking for other IT services?</p>
+            <a href="https://www.customonline.com" target="_blank" rel="noopener">Visit CustomOnline.com &rarr;</a>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h2 class="contact-form-title">Request a Quote</h2>
+          <p class="contact-form-subtitle">Fill out the form below and one of our specialists will contact you within one business day.</p>
+          
+          <!-- HubSpot Form Container -->
+          <!-- 
+            To integrate HubSpot form:
+            1. Replace PORTAL_ID and FORM_ID with values from CCS HubSpot account
+            2. Ensure subdomain is added to HubSpot allowed domains
+          -->
+          <div id="hubspot-form-container">
+            <!-- Static form as fallback/placeholder until HubSpot form loads -->
+            <form class="static-form" action="#" method="POST" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstname">First Name <span class="required">*</span></label>
+                  <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastname">Last Name <span class="required">*</span></label>
+                  <input type="text" id="lastname" name="lastname" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number <span class="required">*</span></label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company">
+              </div>
+              
+              <div class="form-group">
+                <label for="employees">Number of Employees</label>
+                <select id="employees" name="employees">
+                  <option value="">Please Select</option>
+                  <option value="1-10">1-10</option>
+                  <option value="11-50">11-50</option>
+                  <option value="51-100">51-100</option>
+                  <option value="101-500">101-500</option>
+                  <option value="500+">500+</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label>Services Interested In</label>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-phones" name="services" value="Business Phones">
+                    <label for="service-phones">Business Phones</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-internet" name="services" value="Internet">
+                    <label for="service-internet">Internet</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-callcenter" name="services" value="Call Center Solutions">
+                    <label for="service-callcenter">Call Center Solutions</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-network" name="services" value="Managed Network">
+                    <label for="service-network">Managed Network</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-cameras" name="services" value="AI Surveillance / Cameras">
+                    <label for="service-cameras">AI Surveillance / Cameras</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input type="checkbox" id="service-sip" name="services" value="SIP Trunking">
+                    <label for="service-sip">SIP Trunking</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Additional Information</label>
+                <textarea id="message" name="message" placeholder="Tell us about your communication needs..."></textarea>
+              </div>
+              
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">Submit Request</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- HubSpot Form Script - Uncomment and update with actual IDs when available -->
+          <!--
+          <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+          <script>
+            // Hide static form when HubSpot loads
+            document.getElementById('contact-form').style.display = 'none';
+            
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "PORTAL_ID",
+              formId: "FORM_ID",
+              target: "#hubspot-form-container",
+              onFormReady: function() {
+                // HubSpot form loaded successfully
+                console.log('HubSpot form loaded');
+              }
+            });
+          </script>
+          -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band cta-band-teal">
+    <div class="container">
+      <h2 class="cta-band-title">Prefer to Talk?</h2>
+      <p class="cta-band-description">Our team is ready to answer your questions and help you find the right solution.</p>
+      <a href="tel:8663116721" class="btn btn-white">Call (866) 311-6721</a>
+    </div>
+  </section>
+
+  <!--#include file="includes/footer.html" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

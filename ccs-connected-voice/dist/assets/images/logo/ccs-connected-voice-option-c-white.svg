@@ -1,0 +1,48 @@
+<!-- 
+  CCS Connected Voice Logo - Option C (White variant)
+  For use on dark backgrounds
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" width="300" height="60">
+  <defs>
+    <style>
+      .brand-text { font-family: 'Roboto', Arial, sans-serif; }
+    </style>
+  </defs>
+  
+  <!-- Voice/Sound Wave Icon - White variant -->
+  <g transform="translate(5, 8)">
+    <!-- Outer circle -->
+    <circle cx="22" cy="22" r="20" fill="#ffffff"/>
+    
+    <!-- Inner background -->
+    <circle cx="22" cy="22" r="16" fill="#2f4ea0"/>
+    
+    <!-- Sound waves emanating from center -->
+    <g fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+      <!-- Center vertical line (represents voice/source) -->
+      <line x1="22" y1="14" x2="22" y2="30"/>
+      
+      <!-- Inner wave arc -->
+      <path d="M16 16 Q12 22 16 28" stroke="#00b4d8"/>
+      
+      <!-- Outer wave arc left -->
+      <path d="M12 12 Q6 22 12 32" stroke="#ffffff"/>
+      
+      <!-- Inner wave arc right -->
+      <path d="M28 16 Q32 22 28 28" stroke="#00b4d8"/>
+      
+      <!-- Outer wave arc right -->
+      <path d="M32 12 Q38 22 32 32" stroke="#ffffff"/>
+    </g>
+    
+    <!-- Connection dots -->
+    <circle cx="6" cy="22" r="2" fill="#00b4d8"/>
+    <circle cx="38" cy="22" r="2" fill="#00b4d8"/>
+  </g>
+  
+  <!-- CCS Text -->
+  <text x="56" y="36" class="brand-text" font-size="22" font-weight="700" fill="#ffffff">CCS</text>
+  
+  <!-- Connected Voice Text -->
+  <text x="104" y="36" class="brand-text" font-size="22" font-weight="400" fill="#ffffff">Connected Voice</text>
+</svg>

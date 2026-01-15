@@ -1,0 +1,46 @@
+/* ===================================
+   CCS Connected Voice - CSS Variables
+   Extracted from CustomOnline.com theme
+   =================================== */
+:root {
+  /* Colors */
+  --color-primary: #2f4ea0;
+  --color-primary-dark: #10001e;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #f5f5f5;
+  --color-gray: #595959; /* Improved from #666666 for WCAG AA compliance (5.74:1 contrast) */
+  --color-gray-dark: #333333;
+  --color-blue-light: #e8edf7;
+  --color-teal: #00b4d8;
+  
+  /* Form/Validation Colors */
+  --color-error: #dc3545;
+  --color-success: #28a745;
+  
+  /* Typography */
+  --font-primary: 'Roboto', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  /* Layout */
+  --container-max: 1080px;
+  --header-height: 100px;
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.12);
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  
+  /* Spacing (consistent with CustomOnline) */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 80px;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50">
+  <!-- CCS Logo Mark -->
+  <g transform="translate(0, 5)">
+    <path d="M20 0L35 10L35 30L20 40L5 30L5 10Z" fill="#ffffff"/>
+    <path d="M20 5L30 12L30 28L20 35L10 28L10 12Z" fill="#2f4ea0"/>
+    <path d="M20 10L25 14L25 26L20 30L15 26L15 14Z" fill="#ffffff"/>
+  </g>
+  <!-- CCS Text -->
+  <text x="45" y="28" font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#ffffff">CCS</text>
+  <!-- Connected Voice Text -->
+  <text x="80" y="28" font-family="Roboto, Arial, sans-serif" font-size="16" font-weight="400" fill="#ffffff">Connected Voice</text>
+</svg>

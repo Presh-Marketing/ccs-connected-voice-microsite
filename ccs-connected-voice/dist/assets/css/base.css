@@ -1,0 +1,162 @@
+/* ===================================
+   CCS Connected Voice - Base Styles
+   Reset and typography from CustomOnline.com
+   =================================== */
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--color-gray-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Skip Link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 20px;
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+  padding: 12px 24px;
+  border-radius: 4px;
+  z-index: 9999;
+  font-size: 14px;
+}
+
+.skip-link:focus {
+  top: 20px;
+}
+
+/* Container */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+/* Section Typography */
+.section-title {
+  font-size: 48px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.section-subtitle {
+  font-size: 22px;
+  color: var(--color-gray-dark);
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: var(--color-gray);
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-description.centered {
+  text-align: center;
+}
+
+/* Text utilities */
+.text-blue {
+  color: var(--color-primary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===================================
+   Focus States (Accessibility)
+   =================================== */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px var(--color-primary);
+}
+
+/* Focus styles for form inputs */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(47, 78, 160, 0.15);
+}
+
+/* Nav link focus */
+.nav-link:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
+
+/* ===================================
+   Animations
+   =================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

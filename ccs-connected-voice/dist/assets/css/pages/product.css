@@ -1,0 +1,326 @@
+/* ===================================
+   CCS Connected Voice - Product Page Styles
+   =================================== */
+
+/* ===================================
+   Product Hero
+   =================================== */
+.product-hero {
+  min-height: 500px;
+  padding-top: 100px;
+}
+
+.product-hero .hero-content {
+  padding: 60px 0;
+  max-width: 650px;
+}
+
+.product-hero .hero-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.product-hero .hero-subtitle {
+  font-size: 22px;
+  max-width: 600px;
+}
+
+/* ===================================
+   Product Overview Section
+   =================================== */
+.product-overview {
+  padding: 80px 0;
+  background: var(--color-white);
+}
+
+.product-overview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.product-overview-content h2 {
+  font-size: 36px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.product-overview-content p {
+  font-size: 18px;
+  color: var(--color-gray);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.product-overview-content p strong {
+  color: var(--color-gray-dark);
+}
+
+.product-overview-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-medium);
+}
+
+/* ===================================
+   Product Features Section
+   =================================== */
+.product-features {
+  padding: 80px 0;
+  background: var(--color-gray-light);
+}
+
+.product-features .section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product-features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.product-feature-card {
+  background: var(--color-white);
+  padding: 30px 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--color-gray-light);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+}
+
+.product-feature-card:hover {
+  box-shadow: var(--shadow-soft);
+  transform: translateY(-2px);
+}
+
+.product-feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.product-feature-icon svg {
+  width: 40px;
+  height: 40px;
+  stroke-width: 1.5;
+}
+
+.product-feature-title {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+/* Feature card row layout (alternative) */
+.product-features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  background: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-light);
+}
+
+.product-feature-item-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue-light);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.product-feature-item-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.product-feature-item-content h3 {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-dark);
+  margin-bottom: 8px;
+}
+
+.product-feature-item-content p {
+  font-size: 14px;
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+/* ===================================
+   Product Benefits Section
+   =================================== */
+.product-benefits {
+  padding: 80px 0;
+  background: var(--color-white);
+}
+
+.product-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.product-benefit {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.product-benefit-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-blue-light);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.product-benefit-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.product-benefit-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-dark);
+  margin-bottom: 8px;
+}
+
+.product-benefit-description {
+  font-size: 14px;
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+/* ===================================
+   Product CTA Section
+   =================================== */
+.product-cta {
+  padding: 60px 0;
+  background: var(--color-primary);
+  text-align: center;
+}
+
+.product-cta-title {
+  font-size: 32px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+
+.product-cta-description {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 32px;
+}
+
+.product-cta .btn-group {
+  justify-content: center;
+}
+
+/* ===================================
+   Responsive Adjustments
+   =================================== */
+@media (max-width: 1200px) {
+  .product-features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .product-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .product-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .product-overview-image {
+    order: -1;
+  }
+  
+  .product-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product-features-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .product-hero .hero-content {
+    padding: 40px;
+  }
+  
+  .product-hero .hero-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-hero {
+    min-height: 350px;
+  }
+  
+  .product-hero .hero-content {
+    padding: 30px 20px;
+  }
+  
+  .product-hero .hero-title {
+    font-size: 28px;
+  }
+  
+  .product-hero .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .product-overview-content h2 {
+    font-size: 28px;
+  }
+  
+  .product-features-grid,
+  .product-features-list,
+  .product-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-cta-title {
+    font-size: 24px;
+  }
+}
