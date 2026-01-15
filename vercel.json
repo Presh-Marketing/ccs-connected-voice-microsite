@@ -1,0 +1,5 @@
+{
+  "buildCommand": "node ccs-connected-voice/build.js",
+  "outputDirectory": "ccs-connected-voice/dist",
+  "framework": null
+}
