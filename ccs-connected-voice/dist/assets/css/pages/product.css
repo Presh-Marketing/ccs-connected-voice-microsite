@@ -11,7 +11,11 @@
 }
 
 .product-hero .hero-content {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.product-hero .hero-content-inner {
   max-width: 650px;
 }
 
@@ -279,7 +283,8 @@
   }
   
   .product-hero .hero-content {
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   
   .product-hero .hero-title {
@@ -293,7 +298,8 @@
   }
   
   .product-hero .hero-content {
-    padding: 30px 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   
   .product-hero .hero-title {

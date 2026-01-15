@@ -11,6 +11,9 @@
 
 .home-hero .hero-content {
   padding-top: 140px;
+}
+
+.home-hero .hero-content-inner {
   max-width: 650px;
 }
 

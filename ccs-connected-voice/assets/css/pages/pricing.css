@@ -15,7 +15,10 @@
 }
 
 .pricing-hero .hero-content {
-  padding: 60px 40px;
+  text-align: center;
+}
+
+.pricing-hero .hero-content-inner {
   max-width: 800px;
   margin: 0 auto;
 }

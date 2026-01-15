@@ -11,10 +11,12 @@
 }
 
 .contact-hero .hero-content {
-  padding: 60px 40px;
+  text-align: center;
+}
+
+.contact-hero .hero-content-inner {
   max-width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .contact-hero .hero-title {
