@@ -204,6 +204,162 @@
 }
 
 /* ===================================
+   Feature Tiers Grid
+   =================================== */
+.feature-tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.feature-tier {
+  background: var(--color-gray-light);
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+}
+
+.feature-tier-title {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.feature-tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.feature-tier-list li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+  font-size: 15px;
+  color: var(--color-gray-dark);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.feature-tier-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-tier-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: var(--font-weight-bold);
+}
+
+/* ===================================
+   Pricing Plans Section
+   =================================== */
+.pricing-plans-section {
+  padding: 80px 0;
+  background: #1a365d;
+}
+
+.section-title-light {
+  color: var(--color-white);
+}
+
+.section-description-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.pricing-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.plan-card {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: var(--shadow-medium);
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-card-name {
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.plan-card-price {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.plan-price-value {
+  display: block;
+  font-size: 42px;
+  font-weight: var(--font-weight-bold);
+  color: #f97316;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.plan-price-period {
+  display: block;
+  font-size: 14px;
+  color: var(--color-gray);
+}
+
+.plan-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.plan-card-features li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+  font-size: 14px;
+  color: var(--color-gray-dark);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.plan-card-features li:last-child {
+  border-bottom: none;
+}
+
+.plan-card-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: var(--font-weight-bold);
+}
+
+.btn-orange {
+  background: #f97316;
+  color: var(--color-white);
+  border-color: #f97316;
+}
+
+.btn-orange:hover {
+  background: #ea580c;
+  border-color: #ea580c;
+}
+
+/* ===================================
    Responsive Adjustments
    =================================== */
 @media (max-width: 1200px) {
@@ -220,6 +376,14 @@
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .feature-tiers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .pricing-plans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -232,7 +396,9 @@
   }
   
   .products-grid,
-  .features-grid {
+  .features-grid,
+  .feature-tiers-grid,
+  .pricing-plans-grid {
     grid-template-columns: 1fr;
   }
   
@@ -240,5 +406,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  
+  .plan-price-value {
+    font-size: 36px;
+  }
+  
+  .pricing-plans-section {
+    padding: 60px 0;
   }
 }
