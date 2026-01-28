@@ -1,0 +1,17 @@
+<!-- 
+  CCS Connected Voice Logo - Text Only (White variant)
+  For use on dark backgrounds
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" width="280" height="40">
+  <defs>
+    <style>
+      .brand-text { font-family: 'Roboto', Arial, sans-serif; }
+    </style>
+  </defs>
+  
+  <!-- CCS Text -->
+  <text x="0" y="28" class="brand-text" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="1">CCS</text>
+  
+  <!-- CONNECTED VOICE Text -->
+  <text x="50" y="28" class="brand-text" font-size="20" font-weight="400" fill="#ffffff" letter-spacing="1">CONNECTED VOICE</text>
+</svg>
